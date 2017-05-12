@@ -4,7 +4,7 @@
     //his.tryTheAngular = element(by.css("a.button.button-large.button-primary"));
     this.downloadButton = element(by.css(".button.button-large.button-secondary.has-shield.download-btn"));
   }
-  xdescribe('angularjs.org', function() {
+  describe('angularjs.org', function() {
     var homePage = new HomePage();
 
     beforeEach(function() {
@@ -21,7 +21,7 @@
     this.downloadModal = element(by.css(".modal.fade.ng-isolate-scope.download-modal.in"));
   }
 
-  xdescribe('Download button', function() {
+  describe('Download button', function() {
     var homePage = new HomePage();
     var downloadModal = new DownloadModal();
 
@@ -56,6 +56,8 @@
       browser.get('https://angularjs.org/');
     });
 
+
+
     it('entering a name should output "Hello Name"', function() {
 
 
@@ -71,4 +73,6 @@
       // expect(theBasics.helloOutput.getText()).toEqual('Hello Suparna!');
 
     });
+
+
   });
